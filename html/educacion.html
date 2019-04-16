@@ -10,65 +10,88 @@
         <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre" rel="stylesheet">
     </head>
     <body>
-        <nav class="nav justify-content-left">
+        <nav class="nav justify-content-center">
             <img src="../img/Alanz.png" alt="logo_amada_figuera" width="100px" height="100px">
+            <h1 name="titulo_principal">Resumen Curricular</h1>
         </nav>
-        <nav id="menu" class="nav justify-content-center">
-            <a class="nav-link active" href="index.html">Inicio</a>
-            <a class="nav-link" href="html/educacion.html">Educación</a>
-            <a class="nav-link" href="html/experiencia.html">Experiencia</a>
+        <nav id="menu" class="nav menu" name="menu">
+            <a class="nav-link" href="../index.html">Inicio</a>
+            <a class="nav-link active" href="educacion.html">Educación</a>
+            <a class="nav-link" href="experiencia.html">Experiencia</a>
         </nav>
-        <h1>Hoja de vida</h1>
-        <h2>Educación</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Año</th>
-                    <th>Intitución</th>
-                    <th>Lugar</th>
-                    <th>¿Culminó?</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="tg-baqh">2010-2015</td>
-                    <td class="tg-baqh">UNEFA</td>
-                    <td class="tg-baqh">Caracas,Venezuela</td>
-                    <td class="tg-baqh">Sí</td>
-                </tr>
-                <tr>
-                    <td class="tg-baqh">2004-2009</td>
-                    <td class="tg-baqh">Vasco Da Gama</td>
-                    <td class="tg-baqh">Lara, Venezuela</td>
-                    <td class="tg-baqh">Sí</td>
-                </tr>
-            </tbody>
-        </table>
-        <form action="" autocomplete="on" name="estudios_extras">
-            <fieldset>
-                <legend>Agregar Estudios</legend>
-                <label for="año">Año de grado:</label>
-                <br>
-                <select name="año_graduacion" id="año">
-                    <option value="1">2015</option>
-                </select>
-                <br>
-                <label for="text_1">Institución</label>
-                <br>
-                <input type="text" name="institucion" id="text_1" placeholder="Ingrese institución">
-                <br>
-                <label for="text_2">Lugar</label>
-                <br>
-                <textarea name="texto_largo" id="text_2" cols="30" rows="10" placeholder="Ingrese lugar de estudio"></textarea>
-            </fieldset>
-        </form>
+        <div class="container">
+            <h2 class="titulo_container">Educación</h2>
+            <div class="informacion" name="educacion">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Año</th>
+                            <th>Intitución</th>
+                            <th>Lugar</th>
+                            <th>¿Culminó?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-baqh">2010-2015</td>
+                            <td class="tg-baqh">UNEFA</td>
+                            <td class="tg-baqh">Caracas,Venezuela</td>
+                            <td class="tg-baqh">Sí</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-baqh">2004-2009</td>
+                            <td class="tg-baqh">Vasco Da Gama</td>
+                            <td class="tg-baqh">Lara, Venezuela</td>
+                            <td class="tg-baqh">Sí</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form class="form" action="" autocomplete="on" name="estudios_extras">
+                    <h2 class="subtitle">Agregar Estudios</h2>
+                    <div class="form-group">
+                        <label for="año">Año de grado:</label>
+                        <select class="form-control" id="exampleFormControlSelect1" required>
+                            <option></option>
+                            <option>2015</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                        </select>
+                    </div>
+                    <label for="text_1">Institución</label>
+                    <input type="text" class="form-control" id="text_1" required placeholder="Ingrese nombre de la institución">
+                    <label for="text_2">Lugar </label>
+                    <textarea class="form-control" required id="text_2" rows="3"></textarea><br>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <div class="aside" name="datos_personales">
+                <div class="widget">
+                    <h2 class="titulo_dp">Información Personal</h2>
+                    <div class="foto_perfil">
+                        <img src="../img/perfil2.JPG" alt="foto_amada">
+                    </div>
+                </div>
+                <div class="widget">
+                    <h2 class="titulo_dp">Datos Personales</h2>
+                    <h3 class="titleh3">Nombres y Apellidos:</h3>
+                    <h4 class="titleh4">Amada Thais Figuera Lanz</h4>
+                    <h3 class="titleh3">Fecha de Nacimiento:</h3>
+                    <h4 class="titleh4">03-11-92</h4>
+                    <h3 class="titleh3">Lugar de Nacimiento:</h3>
+                    <h4 class="titleh4">Lara, Venezuela</h4>
+                </div>     
+            </div>
+        </div>
+
         <footer>
-            <label for="footer">
-                <i class="fas fa-envelope"><a href="#" name="correo">amadalanz3@gmail.com</a></i>
-                <i class="fas fa-mobile-alt"><a href="#" name="telefono">+(54)911-5625-0000</a></i>
-                <i class="fab fa-instagram"><a href="#" name="instagram">@amadalanz</a></i>
-                <i class="fas fa-map-marked-alt"><a href="#" name="direccion"></a>Buenos Aires, Argentina</i>
-            </label>
+            <div class="footer">
+                <i class="fas fa-envelope"><a name="correo"> amadalanz3@gmail.com</a></i><br>
+                <i class="fas fa-mobile-alt"><a name="telefono"> +(54)911-5625-0000</a></i><br>
+                <i class="fab fa-instagram"><a name="instagram"> @amadalanz</a></i><br>
+                <i class="fas fa-map-marked-alt"><a name="direccion"></a> Buenos Aires, Argentina</i>
+            </div>
         </footer>
     </body>
 </html>
