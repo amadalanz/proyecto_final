@@ -10,10 +10,23 @@ body{
 }
 
 /*Estilo del menú*/
-.justify-content-center {
+.banner {
     -ms-flex-pack: center!important;
     justify-content: center!important;
     background: rgb(255, 255, 255);
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+    background: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center!important;
+    padding: 0rem;
+    font-size: 2.5rem;
+}
+.logo {
+    vertical-align: middle;
+    border-style: none;
+    width: 800px;
+    padding-top: 20px;
 }
 .menu{
     -ms-flex-pack: center!important;
@@ -40,18 +53,24 @@ body nav h1 {
     width: 1200px;
     margin: 0 auto;
     overflow: hidden;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 .container .titulo_container{
     color: #363940;
     font-size: 26px;
     margin-bottom: 20px;
     margin-top: 20px;
+    text-align: left;
 }
 
 /*Estilos para container*/
 .informacion{
-    float: left;
+    float: right;
     width: 70%;
+}
+.container .informacion .perfil{
+    text-align: justify;
 }
 .container .informacion .list ul li{
     text-align: left;
@@ -62,15 +81,20 @@ body nav h1 {
     font-size: 26px;
     margin-bottom: 20px;
 }
+.container .informacion .titleh3{
+    color: #363940;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
 
 /*Estilo para datos personales*/
 .aside {
-    float: right;
+    float: left;
     width: 25%;
 }
 .aside .widget{
     background: #fff;
-    padding: 40px;
+    padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #f0f0f0;
 }
@@ -79,6 +103,8 @@ body nav h1 {
     margin-bottom: 10px;
 }
 .aside .widget .foto_perfil img{
+    display: block;
+    margin: auto;
     width: 120px;
     border-radius: 10%;
 }
@@ -119,4 +145,9 @@ body nav h1 {
 .footer a:hover {
     color: #495057;
     text-decoration: none;
+}
+
+/*Estilo Botón Formulario*/
+.btn-primary {
+    margin-bottom: 30px;
 }
